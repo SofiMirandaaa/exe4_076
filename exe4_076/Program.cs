@@ -55,5 +55,9 @@ namespace Exe4_076
                 Console.WriteLine();
             }
         }
+        static void Main(string[] args)
+        {
+
+        }
     }
 }

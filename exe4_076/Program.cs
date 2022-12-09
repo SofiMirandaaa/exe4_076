@@ -13,4 +13,8 @@ namespace Exe4_076
             next = n;
         }
     }
+    class Stacks
+    {
+        Node top;
+    }
 }

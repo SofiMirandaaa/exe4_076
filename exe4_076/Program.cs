@@ -16,5 +16,10 @@ namespace Exe4_076
     class Stacks
     {
         Node top;
+        public Stacks()
+        {
+            top = null;
+        }
+
     }
 }

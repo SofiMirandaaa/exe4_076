@@ -36,5 +36,9 @@ namespace Exe4_076
             top = fresh;
             Console.WriteLine("\n" + element + " pushed.");
         }
+        public void pop()
+        {
+            Console.WriteLine("\nThe popped element is: " + top.info);
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace Exe4_076
     {
         Node top;
         public Stacks()
+
         {
             top = null;
         }
@@ -69,6 +70,30 @@ namespace Exe4_076
                 Console.Write("\nEnter your choice: ");
                 string Input = Console.ReadLine();
                 char ch = Convert.ToChar(Input == "" ? "0" : Input);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        sofi.push(num);
+                        break;
+                    case '2':
+                        if (sofi.empty())
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        sofi.pop();
+                        break;
+                    case '3':
+                        sofi.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
+                }
             }
         }
     }

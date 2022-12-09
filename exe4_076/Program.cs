@@ -57,7 +57,19 @@ namespace Exe4_076
         }
         static void Main(string[] args)
         {
-
+            Stacks sofi = new Stacks();
+            while(true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n**Menu**\n");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.Write("\nEnter your choice: ");
+                string Input = Console.ReadLine();
+                char ch = Convert.ToChar(Input == "" ? "0" : Input);
+            }
         }
     }
 }
